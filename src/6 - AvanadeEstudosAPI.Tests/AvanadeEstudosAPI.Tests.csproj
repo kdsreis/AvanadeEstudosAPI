@@ -26,11 +26,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\1 - AvanadeEstudosAPI.API\1 - AvanadeEstudosAPI.API.csproj" />
-    <ProjectReference Include="..\2 - AvanadeEstudosAPI.Domain\2 - AvanadeEstudosAPI.Domain.csproj" />
-    <ProjectReference Include="..\3 - AvanadeEstudosAPI.Services\3 - AvanadeEstudosAPI.Services.csproj" />
-    <ProjectReference Include="..\4 - AvanadeEstudosAPI.Infra\4 - AvanadeEstudosAPI.Infra.csproj" />
-    <ProjectReference Include="..\5 - AvanadeEstudosAPI.Shared\5 - AvanadeEstudosAPI.Shared.csproj" />
+    <ProjectReference Include="..\1 - AvanadeEstudosAPI.API\AvanadeEstudosAPI.API.csproj" />
+    <ProjectReference Include="..\2 - AvanadeEstudosAPI.Domain\AvanadeEstudosAPI.Domain.csproj" />
+    <ProjectReference Include="..\3 - AvanadeEstudosAPI.Services\AvanadeEstudosAPI.Services.csproj" />
+    <ProjectReference Include="..\4 - AvanadeEstudosAPI.Infra\AvanadeEstudosAPI.Infra.csproj" />
+    <ProjectReference Include="..\5 - AvanadeEstudosAPI.Shared\AvanadeEstudosAPI.Shared.csproj" />
   </ItemGroup>
 
 </Project>

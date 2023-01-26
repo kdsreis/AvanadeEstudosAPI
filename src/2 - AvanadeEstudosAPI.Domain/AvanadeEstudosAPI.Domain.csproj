@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\5 - AvanadeEstudosAPI.Shared\5 - AvanadeEstudosAPI.Shared.csproj" />
+    <ProjectReference Include="..\5 - AvanadeEstudosAPI.Shared\AvanadeEstudosAPI.Shared.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,9 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\5 - AvanadeEstudosAPI.Shared\5 - AvanadeEstudosAPI.Shared.csproj" />
-    <ProjectReference Include="..\4 - AvanadeEstudosAPI.Infra\4 - AvanadeEstudosAPI.Infra.csproj" />
-    <ProjectReference Include="..\2 - AvanadeEstudosAPI.Domain\2 - AvanadeEstudosAPI.Domain.csproj" />
+    <ProjectReference Include="..\5 - AvanadeEstudosAPI.Shared\AvanadeEstudosAPI.Shared.csproj" />
+    <ProjectReference Include="..\4 - AvanadeEstudosAPI.Infra\AvanadeEstudosAPI.Infra.csproj" />
+    <ProjectReference Include="..\2 - AvanadeEstudosAPI.Domain\AvanadeEstudosAPI.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
