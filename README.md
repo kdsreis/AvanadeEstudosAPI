@@ -33,35 +33,35 @@ The Project must be a CRUD and the data persisted in a Database running on Docke
 
 ## Commands
 
-# Install Entity Framework on Infra layer
+### Install Entity Framework on Infra layer
 
-dotnet add package Microsoft.EntityFrameworkCore
-dotnet add package Microsoft.EntityFrameworkCore.SqlServer
-dotnet add package Microsoft.EntityFrameworkCore.Tools
-dotnet add package Microsoft.EntityFrameworkCore.Design
+- dotnet add package Microsoft.EntityFrameworkCore
+- dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+- dotnet add package Microsoft.EntityFrameworkCore.Tools
+- dotnet add package Microsoft.EntityFrameworkCore.Design
 
-# Install ef migrations tool
+### Install ef migrations tool
 
-dotnet tool install --global dotnet-ef --version 5.0.1
+- dotnet tool install --global dotnet-ef --version 5.0.1
 
-# Create the migration
+### Create the migration
 
-dotnet ef migrations add InitialMigration
+- dotnet ef migrations add InitialMigration
 
-# Update database with migration
+### Update database with migration
 
-dotnet ef database update
+- dotnet ef database update
 
-# Install AutoMapper
+### Install AutoMapper
 
-dotnet add package AutoMapper
-dotnet add package AutoMapper.Extensions.Microsoft.DependencyInjection
+- dotnet add package AutoMapper
+- dotnet add package AutoMapper.Extensions.Microsoft.DependencyInjection
 
-# Install Azure Key Vault
+### Install Azure Key Vault
 
-dotnet add package Azure.Identity
-dotnet add package Microsoft.Extensions.Configuration.AzureKeyVault
-dotnet add package Azure.Security.KeyVault.Secrets
+- dotnet add package Azure.Identity
+- dotnet add package Microsoft.Extensions.Configuration.AzureKeyVault
+- dotnet add package Azure.Security.KeyVault.Secrets
 
 
 ---
