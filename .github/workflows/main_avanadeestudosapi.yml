@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'AvanadeEstudosAPI'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_11D2D6BD09EC4108AA46CDE9DC5C850A }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6EE5F1A0623644ECB15637C0519A677F }}
           package: .
