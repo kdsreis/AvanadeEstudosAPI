@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using AvanadeEstudosAPI.Domain.Validators;
 using AvanadeEstudosAPI.Shared.Exceptions;
 
@@ -10,8 +9,7 @@ namespace AvanadeEstudosAPI.Domain.Entities
         public string Name { get; private set; }
         public string Email { get; private set; }
         public string Password { get; private set; }
-        public DateTime DateAdded { get; private set; }
-
+        
 
         //EF
         protected User(){}
@@ -25,7 +23,6 @@ namespace AvanadeEstudosAPI.Domain.Entities
 
             Validate();
         }
-
 
         //Comportamentos
         public void SetName(string name){
@@ -43,7 +40,7 @@ namespace AvanadeEstudosAPI.Domain.Entities
             Validate();
         }
 
-        public void SetDateAdded()
+        public override void SetDateAdded()
         {
             DateAdded = DateTime.Now;
         }

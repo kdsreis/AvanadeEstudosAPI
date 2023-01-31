@@ -1,6 +1,4 @@
 using AvanadeEstudosAPI.Services.DTO;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace AvanadeEstudosAPI.Services.Interfaces
 {
@@ -8,8 +6,8 @@ namespace AvanadeEstudosAPI.Services.Interfaces
     {
         Task<UserDTO> CreateAsync(UserDTO userDTO);
         Task<UserDTO> UpdateAsync(UserDTO userDTO);
-        Task RemoveAsync(long id);
-        Task<UserDTO> GetAsync(long id);
+        Task RemoveAsync(int id);
+        Task<UserDTO> GetAsync(int id);
         Task<IList<UserDTO>> GetAllAsync();          
     }
 }

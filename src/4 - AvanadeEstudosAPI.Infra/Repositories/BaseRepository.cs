@@ -32,7 +32,7 @@ namespace AvanadeEstudosAPI.Infra.Repositories{
             return obj;
         }
 
-        public virtual async Task RemoveAsync(long id){
+        public virtual async Task RemoveAsync(int id){
             var obj = await GetAsync(id);
 
             if(obj != null){
@@ -41,7 +41,7 @@ namespace AvanadeEstudosAPI.Infra.Repositories{
             }
         }
 
-        public virtual async Task<T> GetAsync(long id){
+        public virtual async Task<T> GetAsync(int id){
             var obj = await _context.Set<T>()
                                     .AsNoTracking()
                                     .Where(x=>x.Id == id)

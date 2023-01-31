@@ -3,7 +3,6 @@ using AvanadeEstudosAPI.API.Utilities;
 using AvanadeEstudosAPI.API.ViewModels;
 using AvanadeEstudosAPI.Services.DTO;
 using AvanadeEstudosAPI.Services.Interfaces;
-using AvanadeEstudosAPI.Services.Services;
 using AvanadeEstudosAPI.Shared.Exceptions;
 using Microsoft.AspNetCore.Mvc;
 
@@ -75,7 +74,7 @@ namespace AvanadeEstudosAPI.API.Controllers
 
         [HttpDelete]
         [Route("/api/v1/users/remove/{id}")]
-        public async Task<IActionResult> RemoveAsync(long id)
+        public async Task<IActionResult> RemoveAsync(int id)
         {
             try
             {
@@ -100,7 +99,7 @@ namespace AvanadeEstudosAPI.API.Controllers
 
         [HttpGet]
         [Route("/api/v1/users/get/{id}")]
-        public async Task<IActionResult> GetAsync(long id)
+        public async Task<IActionResult> GetAsync(int id)
         {
             try
             {

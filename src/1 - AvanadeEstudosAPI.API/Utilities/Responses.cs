@@ -1,7 +1,7 @@
-using System.Collections.Generic;
 using AvanadeEstudosAPI.API.ViewModels;
 
-namespace AvanadeEstudosAPI.API.Utilities{
+namespace AvanadeEstudosAPI.API.Utilities
+{
     public static class Responses{
         public static ResultViewModel ApplicationErrorMessage()
         {

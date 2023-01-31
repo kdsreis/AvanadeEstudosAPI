@@ -6,7 +6,7 @@ using AvanadeEstudosAPI.Services.Interfaces;
 
 namespace AvanadeEstudosAPI.Services.Services
 {
-    public class UserService : IUserService
+    public class UserService : IUserService , IUserObserver
     {
         private readonly IMapper _mapper;       
         private readonly IUserRepository _userRepository;    
@@ -19,11 +19,10 @@ namespace AvanadeEstudosAPI.Services.Services
 
         public async Task<UserDTO> CreateAsync(UserDTO userDTO)
         {
-
             var user = _mapper.Map<User>(userDTO); 
             user.Validate();
             user.SetDateAdded(); 
-            var userCreated = await _userRepository.CreateAsync(user);
+            var userCreated = await _userRepository.CreateAsync(user);            
             return _mapper.Map<UserDTO>(userCreated);
         }
 
@@ -41,24 +40,26 @@ namespace AvanadeEstudosAPI.Services.Services
             return _mapper.Map<UserDTO>(userUpdated);
         }
 
-        public async Task RemoveAsync(long id)
+        public async Task RemoveAsync(int id)
         { 
             await _userRepository.RemoveAsync(id);
         }
 
-        public async Task<UserDTO> GetAsync(long id)
+        public async Task<UserDTO> GetAsync(int id)
         {
             var user = await _userRepository.GetAsync(id);
             return _mapper.Map<UserDTO>(user);
-
         }
 
         public async Task<IList<UserDTO>> GetAllAsync()
         {
             var allUsers = await _userRepository.GetAllAsync();
-            return _mapper.Map<List<UserDTO>>(allUsers);
-            
-        }       
+            return _mapper.Map<List<UserDTO>>(allUsers);            
+        }
 
+        public void Send(IUserSubject subject)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
